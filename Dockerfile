@@ -14,4 +14,4 @@ COPY . . /app/
 EXPOSE 5000
 
 # Command to start training service
-CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
+CMD ["python","main.py"]
