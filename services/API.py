@@ -3,7 +3,7 @@ from services.Dal import Dal
 app = FastAPI()
 
 
-my_dal = Dal(host,data_base,user,password,port)
+my_dal = Dal('localhost','data','user','password','port')
 @app.get("/")
 def get_root():
     return {"Hello": "World"}
